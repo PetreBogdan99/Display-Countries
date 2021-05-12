@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Countries of the World<span> &#9632;</span></h1>
+      <div id="searchWrapper">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="search for a country"
+          onkeyup="getSearchCountry()"
+        />
+        
+      </div>
+      <div id="countriesList">     
+      </div>
+      <div id="countryDetails" class="modal">
+        <div class="modal-content">
+        <span id="modalCloseButton">&times;</span>
+        
+      </div>
+      </div>
+      <p class="noResult">No countries match your search criteria</p>
+    </div>
+    
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
